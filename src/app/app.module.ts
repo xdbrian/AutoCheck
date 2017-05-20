@@ -25,6 +25,7 @@ import { HomeComponent } from './views/home/home.component';
 import { DetailComponent } from './views/detail/detail.component';
 import { GeneralInfoVehiculeComponent } from './component/general-info-vehicule/general-info-vehicule.component';
 import { DetailInfoVehiculeComponent } from './component/detail-info-vehicule/detail-info-vehicule.component'
+import { CommentsComponent } from './comments/comments.component'
 //services
 import { GeneralData } from './services/GeneralData.component';
 
@@ -37,7 +38,8 @@ import { GeneralData } from './services/GeneralData.component';
     DetailComponent,
     GeneralInfoVehiculeComponent,
     DetailInfoVehiculeComponent,
-    MessageError
+      CommentsComponent,
+      MessageError
   ],
   imports: [
 
