@@ -25,8 +25,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.vehiculo = this.generalData.getInfoVehicule()
 
-    console.log('search')
-    this.search()
 
 
   }
