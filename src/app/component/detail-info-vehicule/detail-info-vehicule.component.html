@@ -39,17 +39,24 @@
   </md-tab>
   <md-tab label="Comentarios">
     <button md-raised-button md-dialog-close color="primary" (click)="addComment()">AGREGAR</button>
-    <ul>
-      <li *ngFor="let comment of vehicule.comments">
-        <table>
-          <tr>
-            <td>{{comment.usuario}}</td>
-            <td>{{comment.fecha}}</td>
-            <td>{{comment.calificacion}}</td>
-          </tr>
-        </table>
-          {{comment.comentario}}
-      </li>
-    </ul>
+    <h2 class="second-color">Resumen</h2>
+    <p>Bueno: 3</p>
+    <p>Regular: 3</p>
+    <p>Malo: 2</p>
+
+    <h2 class="second-color">Comentarios</h2>
+
+    <div *ngFor="let comment of vehicule.comments" class="comment-wrapper">
+      <table width="100%">
+        <tr>
+          <td width="30%">{{comment.usuario}}</td>
+          <td width="30%">{{comment.fecha}}</td>
+          <td><span class="calificacion">{{comment.calificacion}}</span></td>
+        </tr>
+      </table>
+      <div class="comment">
+        {{comment.comentario}}
+      </div>
+    </div>
   </md-tab>
 </md-tab-group>

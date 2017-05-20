@@ -16,3 +16,31 @@ body {
 .vertical-align-center{
   align-items: center;
 }
+.comment-wrapper{
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.comment{
+  margin-left:20px;
+}
+
+.ta-center{
+  text-align: center;
+}
+
+.calificacion{
+  background: #e2ab33;
+  border-radius: 3px;
+  padding: 2px;
+}
+.primary-color-bgc{
+  background-color: #e2ab33;
+}
+
+.second-color{
+  color: #ce6b00;
+}
