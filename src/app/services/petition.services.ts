@@ -13,16 +13,24 @@ export class Petition {
 
     getPost(nameConstantsURL, dataObject): Observable<Response> {
 
-        let body = JSON.stringify(dataObject),
+        let body = JSON.stringify(dataObject)
 
-            response = this.http.post(nameConstantsURL, body).map((res: Response) => {
-                    return res;
-                }).catch((err, source) => {
-                    console.log(err);
-                    return Observable.throw(err);
-                });
+            let header = {
+                'Content-Type': 'application/json; charset=utf-8'
+            };
 
-            return response;
+
+        let head = new Headers(header);
+
+        let options = new RequestOptions({ headers: head, withCredentials: false }),
+            response = this.http.post(nameConstantsURL, body, options).map((res: Response) => {
+
+                return res;
+            }).catch((err, source) => {
+                console.log(err);
+                return Observable.throw(err);
+            });
+        return response;
     }
 
 }

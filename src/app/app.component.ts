@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { ViewChild } from '@angular/core'
 import { Router } from '@angular/router'
 import { Petition } from './services/petition.services'
+import { GeneralData } from './services/GeneralData.component'
 
 //Components
 import { MessageError } from './component/message-error/message-error.component'
@@ -10,7 +11,7 @@ import { MessageError } from './component/message-error/message-error.component'
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers : [ Petition ]
+  providers : [ Petition,GeneralData ]
 })
 export class AppComponent implements OnInit{
   title = 'app works!';
@@ -23,22 +24,6 @@ export class AppComponent implements OnInit{
   }
   ngOnInit() {
 
-
-    let url='google.com'
-
-    let data = {"request": {"productCode": "PAEPPL"}};
-    this.petition.getPost(url,data)
-        .map(response => response.json())
-        .subscribe(
-            data => {
-              this.route.navigate(['general-info'])
-            },
-            err => {
-              this.messageError.addAlert("Lo sentimos la placa no existe")
-              console.log(err)
-            },
-            () => console.log(' complete for Server Metrics ')
-        )
 
 
 
