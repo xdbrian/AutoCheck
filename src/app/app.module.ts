@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule,
-  MdTabsModule
+  MdTabsModule, MdDialogModule
 } from '@angular/material';
 import { AppComponent } from './app.component';
 import { HeaderVehiculeComponent } from './component/header-vehicule/header-vehicule.component';
@@ -19,7 +19,8 @@ import { HomeComponent } from './views/home/home.component';
 import { DetailComponent } from './views/detail/detail.component';
 import { GeneralInfoVehiculeComponent } from './component/general-info-vehicule/general-info-vehicule.component';
 import { DetailInfoVehiculeComponent } from './component/detail-info-vehicule/detail-info-vehicule.component';
-import { CommentsComponent } from './comments/comments.component'
+import { CommentsComponent } from './comments/comments.component';
+import { NewCommentComponent } from './component/new-comment/new-comment.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { CommentsComponent } from './comments/comments.component'
     DetailComponent,
     GeneralInfoVehiculeComponent,
     DetailInfoVehiculeComponent,
-    CommentsComponent
+    CommentsComponent,
+    NewCommentComponent
   ],
   imports: [
     BrowserModule,

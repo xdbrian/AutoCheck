@@ -27,7 +27,11 @@ export class GeneralInfoVehiculeComponent implements OnInit {
       infoSunat: {
         deudaTribu: 'NO TIENE',
         moras: 'varios'
-      }
+      },
+      comments: [
+        {usuario: 'CQUISPE', fecha: '12/01/2014'},
+        {usuario: 'CARMEN', fecha: '12/01/2015'}
+      ]
     };
   }
 
