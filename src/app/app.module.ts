@@ -10,7 +10,9 @@ import { MdButtonModule,
         MdMenuModule,
         MdToolbarModule,
         MdIconModule,
-        MdInputModule } from '@angular/material';
+        MdInputModule,
+        MdTabsModule
+  } from '@angular/material';
 import { AppComponent } from './app.component';
 import { HeaderVehiculeComponent } from './component/header-vehicule/header-vehicule.component';
 import { InfoVehiculeComponent } from './component/info-vehicule/info-vehicule.component';
@@ -44,7 +46,8 @@ import { GeneralData } from './services/GeneralData.component';
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
-    MdInputModule, MdTabsModule,
+    MdInputModule,
+    MdTabsModule,
     RouterModule.forRoot([
         {
         path: '',
