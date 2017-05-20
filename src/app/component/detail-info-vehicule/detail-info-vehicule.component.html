@@ -38,6 +38,18 @@
     </table>
   </md-tab>
   <md-tab label="Comentarios">
-    <app-comments [comments]="vehicule.comments"></app-comments>
+    <button md-raised-button md-dialog-close color="primary" (click)="addComment()">AGREGAR</button>
+    <ul>
+      <li *ngFor="let comment of vehicule.comments">
+        <table>
+          <tr>
+            <td>{{comment.usuario}}</td>
+            <td>{{comment.fecha}}</td>
+            <td>{{comment.calificacion}}</td>
+          </tr>
+        </table>
+          {{comment.comentario}}
+      </li>
+    </ul>
   </md-tab>
 </md-tab-group>

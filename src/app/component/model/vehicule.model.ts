@@ -9,5 +9,5 @@ export class Vehicule {
   calificacion: string;
   infoSat: InfoSat;
   infoSunat: InfoSunat;
-  comments: any[];
+  comments?: any[];
 };

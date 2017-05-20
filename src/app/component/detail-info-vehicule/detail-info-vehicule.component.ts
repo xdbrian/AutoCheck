@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Vehicule} from '../model/vehicule.model';
+import {MdDialog} from '@angular/material';
+import {NewCommentComponent} from '../new-comment/new-comment.component';
 
 @Component({
   selector: 'app-detail-info-vehicule',
@@ -28,10 +30,18 @@ export class DetailInfoVehiculeComponent implements OnInit {
         moras: 'varios'
       },
       comments: [
-        {usuario: 'CQUISPE', fecha: '12/01/2014'},
-        {usuario: 'CARMEN', fecha: '12/01/2015'}
+        {comentario: 'AAAAA', usuario: 'CQUISPE', fecha: '12/01/2014', calificacion: 'Bueno'},
+        {comentario: 'BBBBB', usuario: 'CARMEN', fecha: '12/01/2015', calificacion: 'Malo'}
       ]
     };
+  }
+  addComment() {
+    // this.dialog.open(NewCommentComponent, {position: {top: '0px'}});
+    // // dialogRef.updatePosition({top: '25px'});
+    // dialogRef.componentInstance.crudType = constant.crudType.create;
+    // dialogRef.componentInstance.afterSave.subscribe(person => {
+    //   this.afterSave(person);
+    // });
   }
 
   ngOnInit() {
