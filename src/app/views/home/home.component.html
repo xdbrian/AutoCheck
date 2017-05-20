@@ -1,1 +1,13 @@
-<a routerLink="/detail"> ir a detalle</a>
+  <table class="content">
+    <md-input-container style="width: 100%" >
+      <input mdInput #postalCode maxlength="5" placeholder="Ingrese número de placa" value="">
+      <md-hint align="end">{{postalCode.value.length}} / 8</md-hint>
+  </md-input-container>
+
+  <div class="container">
+      <div class="center">
+        <a md-raised-button routerLink="/detail">Consultar</a>
+      </div>
+  </div>
+</table>
+
