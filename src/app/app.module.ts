@@ -5,9 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, 
+import { MdButtonModule,
         MdCardModule,
-        MdMenuModule, 
+        MdMenuModule,
         MdToolbarModule,
         MdIconModule,
         MdInputModule } from '@angular/material';
@@ -17,9 +17,10 @@ import { InfoVehiculeComponent } from './component/info-vehicule/info-vehicule.c
 //components
 
 //views
-import { HomeComponent } from './views/home/home.component'
-import { DetailComponent } from './views/detail/detail.component'
-
+import { HomeComponent } from './views/home/home.component';
+import { DetailComponent } from './views/detail/detail.component';
+import { GeneralInfoVehiculeComponent } from './component/general-info-vehicule/general-info-vehicule.component';
+import { DetailInfoVehiculeComponent } from './component/detail-info-vehicule/detail-info-vehicule.component'
 //services
 import { GeneralData } from './services/GeneralData.component';
 
@@ -29,7 +30,9 @@ import { GeneralData } from './services/GeneralData.component';
     HeaderVehiculeComponent,
     InfoVehiculeComponent,
     HomeComponent,
-    DetailComponent
+    DetailComponent,
+    GeneralInfoVehiculeComponent,
+    DetailInfoVehiculeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { GeneralData } from './services/GeneralData.component';
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
-    MdInputModule,
+    MdInputModule, MdTabsModule,
     RouterModule.forRoot([
         {
         path: '',
@@ -52,13 +55,18 @@ import { GeneralData } from './services/GeneralData.component';
         component : HomeComponent
       },
       {
-        path : 'detail',
-        component : DetailComponent
-      }])
+        path : 'general-info',
+        component : GeneralInfoVehiculeComponent
+      },
+      {
+        path : 'detail-info',
+        component : DetailInfoVehiculeComponent
+      }
+      ])
   ],
   providers: [GeneralData],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 
 }
