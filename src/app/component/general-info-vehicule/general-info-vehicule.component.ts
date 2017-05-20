@@ -15,7 +15,19 @@ export class GeneralInfoVehiculeComponent implements OnInit {
       modelo: 'RAV',
       placa: 'AAA-BBB',
       color: 'GRIS',
-      calificacion: 'Auto Seguro'
+      calificacion: 'Auto Seguro',
+      infoSat: {
+        propietario: 'dfjdkf',
+        marca: 'TOYOTA',
+        modelo: 'RAV',
+        placa: 'AAA-BBB',
+        color: 'GRIS',
+        annio: 2000,
+      },
+      infoSunat: {
+        deudaTribu: 'NO TIENE',
+        moras: 'varios'
+      }
     };
   }
 
