@@ -18,7 +18,8 @@ import { InfoVehiculeComponent } from './component/info-vehicule/info-vehicule.c
 import { HomeComponent } from './views/home/home.component';
 import { DetailComponent } from './views/detail/detail.component';
 import { GeneralInfoVehiculeComponent } from './component/general-info-vehicule/general-info-vehicule.component';
-import { DetailInfoVehiculeComponent } from './component/detail-info-vehicule/detail-info-vehicule.component'
+import { DetailInfoVehiculeComponent } from './component/detail-info-vehicule/detail-info-vehicule.component';
+import { CommentsComponent } from './comments/comments.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { DetailInfoVehiculeComponent } from './component/detail-info-vehicule/de
     HomeComponent,
     DetailComponent,
     GeneralInfoVehiculeComponent,
-    DetailInfoVehiculeComponent
+    DetailInfoVehiculeComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
