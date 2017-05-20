@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MessageError } from './component/message-error/message-error.component';
+import { ViewChild } from '@angular/core'
 import { MdButtonModule,
         MdCardModule,
         MdMenuModule,
@@ -34,9 +36,11 @@ import { GeneralData } from './services/GeneralData.component';
     HomeComponent,
     DetailComponent,
     GeneralInfoVehiculeComponent,
-    DetailInfoVehiculeComponent
+    DetailInfoVehiculeComponent,
+    MessageError
   ],
   imports: [
+
     BrowserModule,
     FormsModule,
     HttpModule,

@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import {Vehicule} from '../component/model/vehicule.model';
+
 /**
 * @class FavoriteService
 * @description Servicio para manejar las peticiones de las consultas
@@ -6,12 +8,11 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class GeneralData {
-  
-    private vehiculeSearch:String ;
+
+    private Vehicule = new Vehicule();
 
   getInfoVehicule() {
-    return this.vehiculeSearch;
+    return this.Vehicule;
   }
-
 
 }

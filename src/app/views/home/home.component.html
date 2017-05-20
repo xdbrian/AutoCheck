@@ -1,13 +1,19 @@
-  <table class="content">
+
+
+<table class="content" >
+    <img style="width: 135px;margin-left: 24%;" src="../../../assets/img/Logo-sin-fondo.png" >
     <md-input-container style="width: 100%" >
-      <input mdInput #postalCode maxlength="5" placeholder="Ingrese número de placa" value="">
+      <input mdInput #postalCode maxlength="8" placeholder="Ingrese número de placa" value="">
       <md-hint align="end">{{postalCode.value.length}} / 8</md-hint>
   </md-input-container>
 
   <div class="container">
+
       <div class="center">
-        <a md-raised-button routerLink="/detail">Consultar</a>
+        <a md-raised-button routerLink="/general-info">Consultar</a>
       </div>
+
+
   </div>
 </table>
 

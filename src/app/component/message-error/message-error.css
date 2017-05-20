@@ -1,0 +1,17 @@
+#message-error{
+  position: absolute;
+  z-index: 15;
+}
+
+
+.backColor{
+  margin-top: 56px;
+  background-color: rgba(255, 115, 115, 0.12);
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  /* border: #bd0000; */
+  padding: 8px;
+  color: rgba(189, 0, 0, 0.67);
+  border: 1px solid rgba(237, 19, 19, 0.09);
+}
